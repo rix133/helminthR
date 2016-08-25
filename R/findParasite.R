@@ -11,7 +11,7 @@
 #'
 #' @param genus Parasite genus
 #' @param species Parasite species
-#' @param group Parasite group - Cestodes, Acanthocephalans, Monogeneans, Nematodes, Trematodes, or Turbellarian etc. (Turb)
+#' @param group Parasite group - Cestodes, Acanthocephalans, Monogeneans, Nematodes, Trematodes, or Turbellarian etc. (Turbs)
 #' @param subgroup Parasite subgroup (family names largely)
 #' @param location Location of host-parasite interaction.
 #' @param citation Boolean. Should the output include the citation link? default is FALSE
@@ -48,8 +48,8 @@ findParasite <- function(genus = NULL,
                          hostState = NULL, speciesOnly = FALSE,
                          validateHosts = FALSE, removeDuplicates=FALSE) {
    if(!is.null(group)){
-     if(all((group == c('Cestodes', 'Acanthocephalans', 'Monogeneans', 'Nematodes','Trematodes', 'Turb')) == FALSE)){
-         stop("Parasite group must be one of the following: Cestodes, Acanthocephalans, Monogeneans, Nematodes, Trematodes, Turb")
+     if(all((group == c('Cestodes', 'Acanthocephalans', 'Monogeneans', 'Nematodes','Trematodes', 'Turbs')) == FALSE)){
+         stop("Parasite group must be one of the following: Cestodes, Acanthocephalans, Monogeneans, Nematodes, Trematodes, Turbs")
      }
    }
 
